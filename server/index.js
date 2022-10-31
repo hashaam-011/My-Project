@@ -11,9 +11,6 @@ app.use(cors())
 mongoose.connect("mongodb+srv://huzefatanveer:Iamtheone1122@crud.ujcnxls.mongodb.net/food?retryWrites=true&w=majority",{
     useNewUrlParser: true,
 })
-//  app.get("/", (req,res)=>{
-//      res.send("<h1>fine</h1>")
-//  })
 
 app.post("/insert", async (req,res,next)=>{
     const foodName = req.body.foodName
